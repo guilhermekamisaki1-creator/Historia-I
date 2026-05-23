@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula Completa de História — Ideologias do Século XIX & Independências na América Espanhola</title>
+<style>
+:root{
+  --bg:#f4f1e8;
+  --paper:#fbfaf5;
+  --ink:#26221c;
+  --ink-soft:#544c3f;
+  --indigo:#262344;
+  --indigo-light:#3a3663;
+  --crimson:#9a2842;
+  --crimson-soft:#c14b66;
+  --ochre:#a9761f;
+  --ochre-soft:#caa14f;
+  --line:#ddd6c4;
+  --shadow:0 10px 35px -12px rgba(38,34,28,.28);
+  --shadow-sm:0 4px 14px -6px rgba(38,34,28,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height:1.72;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.25;font-weight:700}
+p{margin:.7em 0}
+strong{color:var(--indigo)}
+em{color:var(--crimson)}
+
+/* ---------- TOP NAV ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(38,35,68,.97);
+  backdrop-filter:blur(6px);
+  border-bottom:3px solid var(--ochre);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 22px;
+}
+.topbar .brand{color:#f4f1e8;font-family:Georgia,serif;font-weight:700;font-size:1.05rem;letter-spacing:.3px}
+.topbar .brand span{color:var(--ochre-soft)}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap}
+.topbar nav a{
+  color:#d8d3e6;text-decoration:none;font-size:.82rem;font-weight:600;
+  padding:6px 13px;border-radius:30px;transition:.2s;letter-spacing:.2px;
+}
+.topbar nav a:hover{background:rgba(255,255,255,.13);color:#fff}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:
+    linear-gradient(135deg,rgba(38,35,68,.93),rgba(58,54,99,.88)),
+    repeating-linear-gradient(45deg,rgba(0,0,0,.04) 0 2px,transparent 2px 14px);
+  color:#f4f1e8;
+  padding:70px 24px 60px;
+  text-align:center;
+  border-bottom:5px solid var(--ochre);
+}
+.hero .kicker{
+  display:inline-block;font-size:.78rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--ochre-soft);border:1px solid var(--ochre);border-radius:30px;
+  padding:5px 18px;margin-bottom:22px;font-weight:700;
+}
+.hero h1{font-size:2.55rem;max-width:880px;margin:0 auto 16px;line-height:1.22}
+.hero p{max-width:640px;margin:0 auto;color:#cfc9dd;font-size:1.05rem}
+.hero .meta{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hero .meta span{
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);
+  padding:6px 16px;border-radius:8px;font-size:.82rem;font-weight:600;
+}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:46px 24px 80px;display:grid;grid-template-columns:235px 1fr;gap:42px}
+.toc{position:sticky;top:90px;align-self:start;font-size:.86rem}
+.toc h4{font-size:.78rem;text-transform:uppercase;letter-spacing:2px;color:var(--ink-soft);margin-bottom:12px}
+.toc a{display:block;color:var(--ink-soft);text-decoration:none;padding:5px 0 5px 12px;border-left:2px solid var(--line);transition:.18s}
+.toc a:hover{color:var(--crimson);border-left-color:var(--crimson);transform:translateX(2px)}
+.toc .toc-m1{font-weight:700;color:var(--crimson);margin-top:6px;border-left-color:var(--crimson)}
+.toc .toc-m2{font-weight:700;color:var(--ochre);margin-top:14px;border-left-color:var(--ochre)}
+.content{min-width:0}
+
+/* ---------- MODULE HEADERS ---------- */
+.module-head{
+  border-radius:14px;padding:34px 32px;margin:14px 0 30px;color:#fff;
+  box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.module-head::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:200px;height:200px;
+  border-radius:50%;background:rgba(255,255,255,.07);
+}
+.m1-head{background:linear-gradient(120deg,#7a1f34,#9a2842)}
+.m2-head{background:linear-gradient(120deg,#7d5618,#a9761f)}
+.module-head .tag{font-size:.76rem;letter-spacing:2.5px;text-transform:uppercase;opacity:.85;font-weight:700}
+.module-head h2{font-size:2rem;margin:8px 0 6px}
+.module-head p{color:rgba(255,255,255,.9);max-width:680px;font-size:.97rem}
+
+/* ---------- SECTIONS ---------- */
+section{margin-bottom:30px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:12px;
+  padding:30px 32px;margin-bottom:22px;box-shadow:var(--shadow-sm);
+}
+.card h3{
+  font-size:1.42rem;color:var(--indigo);margin-bottom:6px;
+  display:flex;align-items:baseline;gap:10px;
+}
+.card h3 .num{
+  font-size:.85rem;font-family:Georgia,serif;color:#fff;background:var(--indigo);
+  padding:3px 11px;border-radius:6px;flex-shrink:0;
+}
+.m1 .card h3 .num{background:var(--crimson)}
+.m2 .card h3 .num{background:var(--ochre)}
+.card h4{font-size:1.08rem;color:var(--indigo-light);margin:22px 0 6px}
+.lead{font-size:1.04rem;color:var(--ink-soft);font-style:italic;border-left:3px solid var(--ochre);padding-left:16px;margin:4px 0 18px}
+ul,ol{margin:.6em 0 .6em 1.3em}
+li{margin:.34em 0}
+li::marker{color:var(--crimson)}
+.m2 li::marker{color:var(--ochre)}
+
+/* ---------- BOXES ---------- */
+.box{border-radius:10px;padding:18px 22px;margin:20px 0;font-size:.97rem}
+.box .bt{font-weight:700;font-family:Georgia,serif;font-size:1rem;margin-bottom:5px;display:flex;align-items:center;gap:8px}
+.box .bt::before{font-size:1.15rem}
+.box.atencao{background:#fbf3e3;border:1px solid #e6c987}
+.box.atencao .bt{color:#9a6a12}.box.atencao .bt::before{content:"⚠"}
+.box.pegadinha{background:#fdeaee;border:1px solid #e8a9b6}
+.box.pegadinha .bt{color:var(--crimson)}.box.pegadinha .bt::before{content:"✕"}
+.box.cai{background:#eaf1ec;border:1px solid #a9c9b3}
+.box.cai .bt{color:#2f6b46}.box.cai .bt::before{content:"★"}
+.box.compl{background:#eef0f7;border:1px solid #b9bdd6}
+.box.compl .bt{color:var(--indigo)}.box.compl .bt::before{content:"+"}
+.box.avanc{background:#1f1d38;border:1px solid #3a3663;color:#dcd8ea}
+.box.avanc .bt{color:var(--ochre-soft)}.box.avanc .bt::before{content:"▲"}
+.box.avanc strong{color:#fff}.box.avanc em{color:var(--ochre-soft)}
+.box.conceito{background:#fff;border:1px dashed var(--indigo-light)}
+.box.conceito .bt{color:var(--indigo)}.box.conceito .bt::before{content:"❝"}
+
+/* ---------- TABLES ---------- */
+.tablewrap{overflow-x:auto;margin:20px 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:#fff;border-radius:8px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}
+th{background:var(--indigo);color:#fff;font-family:Georgia,serif;font-weight:700;font-size:.9rem}
+.m1 th{background:var(--crimson)}.m2 th{background:var(--ochre)}
+tbody tr:nth-child(even){background:#f6f3ea}
+td strong{color:var(--indigo)}
+
+/* ---------- DIAGRAMS ---------- */
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin:22px 0}
+.flow .node{
+  flex:1;min-width:140px;background:#fff;border:1px solid var(--line);
+  border-top:4px solid var(--indigo);border-radius:9px;padding:14px 16px;
+  font-size:.9rem;box-shadow:var(--shadow-sm);
+}
+.m1 .flow .node{border-top-color:var(--crimson)}
+.m2 .flow .node{border-top-color:var(--ochre)}
+.flow .node b{display:block;font-family:Georgia,serif;color:var(--indigo);margin-bottom:3px;font-size:.98rem}
+.flow .arrow{display:flex;align-items:center;font-size:1.5rem;color:var(--ochre);font-weight:700}
+.schema{
+  background:#1f1d38;color:#e9e6f2;border-radius:10px;padding:22px 26px;margin:22px 0;
+  font-family:"Courier New",monospace;font-size:.9rem;line-height:1.85;overflow-x:auto;
+}
+.schema .h{color:var(--ochre-soft);font-weight:700}
+.schema .ar{color:var(--crimson-soft)}
+
+/* ---------- TIMELINE ---------- */
+.timeline{position:relative;margin:24px 0 24px 8px;padding-left:26px;border-left:3px solid var(--line)}
+.timeline .ev{position:relative;margin-bottom:18px}
+.timeline .ev::before{
+  content:"";position:absolute;left:-35px;top:3px;width:15px;height:15px;
+  border-radius:50%;background:var(--ochre);border:3px solid var(--paper);
+}
+.timeline .yr{font-family:Georgia,serif;font-weight:700;color:var(--crimson);font-size:1.05rem}
+.m2 .timeline .yr{color:var(--ochre)}
+
+/* ---------- VIDEOS ---------- */
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.vbtn{
+  display:flex;flex-direction:column;gap:6px;text-decoration:none;
+  background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;
+  transition:.2s;box-shadow:var(--shadow-sm);
+}
+.vbtn:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--crimson)}
+.vbtn .play{
+  display:inline-flex;align-items:center;gap:7px;font-size:.74rem;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;color:#cc0000;
+}
+.vbtn .play::before{
+  content:"▶";background:#cc0000;color:#fff;width:24px;height:24px;border-radius:5px;
+  display:inline-flex;align-items:center;justify-content:center;font-size:.62rem;
+}
+.vbtn .vtitle{font-family:Georgia,serif;font-weight:700;color:var(--indigo);font-size:.98rem;line-height:1.3}
+.vbtn .vch{font-size:.82rem;color:var(--ink-soft)}
+
+/* ---------- QUIZ ---------- */
+.quiz{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:var(--shadow-sm)}
+.quiz .qnum{font-family:Georgia,serif;font-weight:700;color:#fff;background:var(--indigo);padding:3px 12px;border-radius:6px;font-size:.85rem}
+.quiz .qsrc{font-size:.82rem;color:var(--ink-soft);font-weight:700;letter-spacing:.5px}
+.quiz .qtext{margin:12px 0}
+.quiz .opts{list-style:none;margin:0}
+.quiz .opts li{background:#fff;border:1px solid var(--line);border-radius:7px;padding:9px 14px;margin:7px 0;font-size:.93rem}
+.quiz details{margin-top:14px;background:#eaf1ec;border:1px solid #a9c9b3;border-radius:8px;padding:6px 16px}
+.quiz summary{cursor:pointer;font-weight:700;color:#2f6b46;font-family:Georgia,serif;padding:8px 0}
+.quiz details[open] summary{margin-bottom:6px}
+.quiz .answer{font-size:.93rem;padding-bottom:10px}
+.quiz .answer .key{font-weight:700;color:#2f6b46;font-size:1.05rem}
+
+/* ---------- REVIEW ---------- */
+.review{background:linear-gradient(120deg,#262344,#3a3663);color:#e9e6f2;border-radius:14px;padding:36px 34px;box-shadow:var(--shadow)}
+.review h2{color:#fff;font-size:1.8rem;margin-bottom:6px}
+.review .rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:20px}
+.review .ritem{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:16px 18px}
+.review .ritem b{font-family:Georgia,serif;color:var(--ochre-soft);display:block;margin-bottom:4px;font-size:1rem}
+.review .ritem span{font-size:.9rem;color:#cfc9dd}
+
+footer{text-align:center;padding:34px 20px;color:var(--ink-soft);font-size:.85rem;border-top:1px solid var(--line)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .wrap{grid-template-columns:1fr;padding:30px 16px 60px}
+  .toc{display:none}
+  .hero h1{font-size:1.85rem}
+  .card,.quiz,.review{padding:22px 18px}
+  .module-head{padding:24px 20px}
+  .topbar{padding:9px 14px}
+  .topbar .brand{font-size:.9rem}
+  .topbar nav a{padding:5px 9px;font-size:.74rem}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">Estud<span>Aula</span> · História</div>
+  <nav>
+    <a href="#modulo1">Ideologias do séc. XIX</a>
+    <a href="#modulo2">Independências</a>
+    <a href="#quiz">Exercícios</a>
+    <a href="#revisao">Revisão</a>
+  </nav>
+</div>
+
+<header class="hero">
+  <span class="kicker">Aula Particular Premium · 2º ano EM</span>
+  <h1>Ideologias do Século XIX &amp; A Era Napoleônica e as Independências na América Espanhola</h1>
+  <p>Uma aula completa, do zero ao avançado, construída a partir do seu livro didático e dos slides de classe — com esquemas, pegadinhas, mapa do que mais cai em prova e exercícios resolvidos.</p>
+  <div class="meta">
+    <span>História · Frente A</span>
+    <span>Unidade 1 — Cap. 1</span>
+    <span>Unidade 3 — Cap. 6</span>
+    <span>Preparação Vestibular &amp; ENEM</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ TOC ============ -->
+  <aside class="toc">
+    <h4>Índice da Aula</h4>
+    <a class="toc-m1" href="#modulo1">MÓDULO 1 · Ideologias</a>
+    <a href="#i-contexto">1. Contexto industrial</a>
+    <a href="#i-liberalismo">2. Liberalismo econômico</a>
+    <a href="#i-socialismo">3. Pensamento socialista</a>
+    <a href="#i-marxismo">4. Marxismo (conceitos)</a>
+    <a href="#i-anarquismo">5. Anarquismo</a>
+    <a href="#i-lutas">6. Lutas trabalhistas</a>
+    <a href="#i-igreja">7. Catolicismo Social</a>
+    <a href="#i-nacionalismo">8. Nacionalismo</a>
+    <a class="toc-m2" href="#modulo2">MÓDULO 2 · Independências</a>
+    <a href="#a-napoleao">9. Fim de Napoleão</a>
+    <a href="#a-reformas">10. Reformas napoleônicas</a>
+    <a href="#a-conquista">11. Conquista e Colônia</a>
+    <a href="#a-crise">12. Crise do sistema colonial</a>
+    <a href="#a-causas">13. Causas das independências</a>
+    <a href="#a-processo">14. O processo e os Libertadores</a>
+    <a href="#a-casos">15. Casos: Haiti, Paraguai, México, Cuba</a>
+    <a href="#a-pos">16. Pós-independência e caudilhismo</a>
+    <a href="#quiz">Exercícios resolvidos</a>
+    <a href="#revisao">Revisão final</a>
+  </aside>
+
+  <main class="content">
+
+  <!-- ====================================================== -->
+  <!-- ===================== MÓDULO 1 ======================= -->
+  <!-- ====================================================== -->
+  <div class="m1" id="modulo1">
+    <div class="module-head m1-head reveal">
+      <div class="tag">Módulo 1 — Unidade 1 / Capítulo 1</div>
+      <h2>Ideologias do Século XIX</h2>
+      <p>Como a Europa industrial respondeu, no plano das ideias, à pobreza e à desigualdade geradas pelo capitalismo: liberalismo, socialismo, anarquismo, nacionalismo e a reação da Igreja.</p>
+    </div>
+
+    <!-- 1. CONTEXTO -->
+    <section id="i-contexto">
+      <div class="card reveal">
+        <h3><span class="num">1</span>O contexto: prosperidade industrial e crise</h3>
+        <p class="lead">Antes de entender as ideologias, é preciso entender o problema que elas tentavam resolver: a forma como a sociedade industrial estava organizada.</p>
+
+        <p>As décadas de <strong>1830 e 1840</strong> foram de grande prosperidade para o setor industrial. Países como <strong>Inglaterra, Holanda, Bélgica, Estados Unidos e França</strong> alcançaram enormes avanços tecnológicos. Mas essa prosperidade trazia um mecanismo perigoso dentro de si.</p>
+
+        <h4>O caminho até o monopólio</h4>
+        <p>Com várias nações industrializadas competindo entre si, surgiu uma <strong>concorrência</strong> acirrada. Para não perder lucro, os industriais adotaram uma estratégia: <em>produzir em quantidades cada vez maiores</em>. As pequenas e médias empresas, sem capital para acompanhar, precisaram recorrer a <strong>empréstimos bancários</strong> para se manterem competitivas.</p>
+        <p>Resultado: os <strong>banqueiros</strong> passaram a lucrar muito e a se associar aos grandes capitalistas. Essa fusão entre bancos e grandes companhias (ferro, carvão) <em>eliminava a concorrência</em> e criava o <strong>monopólio</strong>.</p>
+
+        <div class="box conceito">
+          <div class="bt">Conceito-chave — Monopólio</div>
+          <p>Produção de certos produtos por <strong>uma única empresa ou grupo empresarial</strong>, que domina o mercado e controla tanto a <em>quantidade de bens</em> disponível quanto o <em>preço</em> — afinal, sem concorrência, o consumidor não tem alternativa.</p>
+        </div>
+
+        <h4>A crise de superprodução</h4>
+        <p>Na <strong>segunda metade do século XIX</strong>, surgiu o paradoxo central do capitalismo da época. Os trabalhadores eram oprimidos por <strong>salários injustos</strong> — logo, não tinham condições de comprar as próprias mercadorias que produziam. As fábricas produziam muito; o povo consumia pouco.</p>
+
+        <div class="schema">
+<span class="h">CADEIA DA CRISE DE SUPERPRODUÇÃO</span>
+
+Salários baixos  <span class="ar">──▶</span>  operário não consome  <span class="ar">──▶</span>  estoque encalha
+                                              <span class="ar">│</span>
+            nova onda de pobreza  <span class="ar">◀──</span>  desemprego em massa  <span class="ar">◀──</span>  fábricas param
+        </div>
+
+        <p>A consequência foi uma <strong>nova onda de desemprego</strong> que varreu os países industrializados, gerando ainda mais <em>pobreza e miséria</em>. Foi diante desse cenário — riqueza concentrada de um lado, miséria de massa do outro — que nasceram as grandes ideologias do século XIX.</p>
+
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova</div>
+          <p>A banca adora cobrar a <strong>relação causa-efeito</strong>: a crise <em>não</em> foi de "falta de produtos", e sim de <strong>excesso de produção sem poder de compra</strong>. É a chamada "crise de superprodução" — um defeito interno da própria lógica capitalista. Esse diagnóstico é o ponto de partida do pensamento socialista.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LIBERALISMO -->
+    <section id="i-liberalismo">
+      <div class="card reveal">
+        <h3><span class="num">2</span>O Liberalismo Econômico e seus economistas</h3>
+        <p class="lead">A ideologia que <em>defendia</em> e <em>justificava</em> a ordem capitalista — e contra a qual o socialismo iria se construir.</p>
+
+        <p><strong>Complemento para melhor compreensão:</strong> seu slide de aula traz o liberalismo como ponto de partida das ideologias do século XIX, embora o livro entre direto no socialismo. Vale conhecê-lo, pois sem ele as outras ideologias não fazem sentido.</p>
+
+        <p>O <strong>Liberalismo Econômico</strong> tem como pai <strong>Adam Smith</strong>, autor de <em>"A Riqueza das Nações"</em>. A ideia central: a economia funciona melhor quando o Estado <strong>não interfere</strong> — o livre mercado, guiado pela busca do lucro individual, se autorregula (a famosa "mão invisível").</p>
+
+        <h4>Os economistas que justificavam a miséria</h4>
+        <p>No século XIX, alguns economistas liberais foram além e tentaram <em>explicar a pobreza como algo natural e inevitável</em> — o que o tornava, na prática, uma defesa do sistema:</p>
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Pensador</th><th>Ideia central</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Thomas Malthus</strong></td><td>Explica a miséria pelo descompasso entre o crescimento da <em>população</em> (em progressão geométrica — P.G.) e o crescimento da <em>produção de alimentos</em> (em progressão aritmética — P.A.). Conclusão: a fome seria "freio natural".</td></tr>
+            <tr><td><strong>David Ricardo</strong></td><td>"Lei de bronze (ou lei férrea) dos salários": os salários tenderiam <em>sempre</em> ao mínimo de subsistência. Aumentá-los seria inútil.</td></tr>
+            <tr><td><strong>Nassau Senior</strong></td><td>Explicava <em>por que não se poderia reduzir a jornada de trabalho</em> dos operários — segundo ele, o lucro vinha justamente das últimas horas trabalhadas.</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="box pegadinha">
+          <div class="bt">Erro comum / Pegadinha</div>
+          <p>Não confunda <strong>liberalismo econômico</strong> (séc. XVIII–XIX, contra a interferência do Estado) com <strong>neoliberalismo</strong> (séc. XX–XXI). Bancas inserem "neoliberalismo" em questões sobre o século XIX justamente para derrubar quem leu rápido — é <em>anacronismo</em>, está sempre errado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOCIALISMO -->
+    <section id="i-socialismo">
+      <div class="card reveal">
+        <h3><span class="num">3</span>O pensamento socialista</h3>
+        <p class="lead">A nova crise demonstrou que o desemprego e a miséria eram <em>gerados pela forma desigual</em> como a sociedade estava organizada. O socialismo nasce para explicar essa organização e propor mudanças.</p>
+
+        <p>O pensamento socialista começou a se desenvolver na Europa para tentar <strong>explicar</strong> essa desigualdade e <strong>propor mudanças</strong>. Ele se divide em duas grandes correntes.</p>
+
+        <h4>3.1 — Socialismo Utópico (ou Romântico)</h4>
+        <p>Principais nomes: <strong>Charles Fourier</strong> e <strong>Saint-Simon</strong>, na França, <strong>Robert Owen</strong>, na Inglaterra, e <strong>Louis Blanc</strong>. Eles desenvolveram propostas para estabelecer <em>comunidades com condições econômicas e sociais ideais</em>, sem exploração do trabalho.</p>
+        <p>Para Saint-Simon, por exemplo, o princípio liberal <strong>reforça o individualismo</strong>, e a liberdade individual acaba se tornando um <em>instrumento capaz de produzir injustiças</em>. O ponto que define essa corrente: esses pensadores acreditavam numa transformação da sociedade <strong>sem a abolição da propriedade privada</strong> — por isso "utópico", visto pelos marxistas como bem-intencionado, mas irrealista.</p>
+
+        <h4>3.2 — Socialismo Científico (ou Marxismo)</h4>
+        <p>Os pensadores centrais são <strong>Karl Marx</strong> e <strong>Friedrich Engels</strong>. Eles defendiam que os <em>próprios operários</em> deveriam tomar o poder e implantar uma sociedade justa e igual. Essa doutrina ficou conhecida como <strong>socialismo científico</strong> ou <strong>marxismo</strong>.</p>
+        <p>Marx era de origem judaica, nasceu na Alemanha e atuou na Sociologia, Filosofia, Economia e Política. Contou com o apoio financeiro e intelectual de Engels, um industrial alemão. Suas obras mais famosas:</p>
+        <ul>
+          <li><strong>Manifesto Comunista</strong> (1848) — em coautoria com Engels;</li>
+          <li><strong>O Capital</strong> (1867) — análise profunda do funcionamento do capitalismo.</li>
+        </ul>
+
+        <div class="box compl">
+          <div class="bt">Complemento para melhor compreensão</div>
+          <p>O lema mobilizador do <em>Manifesto Comunista</em> é <strong>"Proletários de todos os países, uni-vos!"</strong>. Ele sintetiza a estratégia marxista: a libertação só virá da <em>união organizada</em> da classe trabalhadora, e não de boa vontade individual dos patrões.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MARXISMO CONCEITOS -->
+    <section id="i-marxismo">
+      <div class="card reveal">
+        <h3><span class="num">4</span>Os conceitos centrais do Marxismo</h3>
+        <p class="lead">Estes são os termos que mais aparecem em prova. Vamos definir cada um de forma acessível antes de aprofundar.</p>
+
+        <h4>Mais-valia — o "coração" da teoria</h4>
+        <p>Em <em>O Capital</em>, Marx explica que o capitalista paga ao trabalhador um salário que <strong>não corresponde a todas as horas trabalhadas</strong>. Existe uma parte do trabalho que <em>não é remunerada</em>: essa diferença é a <strong>mais-valia</strong>.</p>
+        <div class="schema">
+<span class="h">COMO FUNCIONA A MAIS-VALIA</span>
+
+Jornada de 8h  ─┬─  4h pagam o salário do operário  (trabalho necessário)
+                └─  4h NÃO são pagas  <span class="ar">──▶</span>  <span class="h">MAIS-VALIA</span> = lucro do patrão
+
+Para Marx: o lucro capitalista É a exploração do trabalho
+para o acúmulo de riqueza nas mãos de uma elite.
+        </div>
+
+        <h4>Materialismo histórico e dialético</h4>
+        <p>É o método de Marx para olhar a história. Diferente dos estudiosos da época, seu olhar era <strong>revolucionário</strong>: ele entendia que a história é movida pelas <em>relações de produção</em> — ou seja, por <strong>quem controla os meios de produção</strong> (terras, fábricas, máquinas). A história, para ele, é a história das <em>contradições econômicas</em> entre as classes.</p>
+
+        <h4>Luta de classes</h4>
+        <p>A burguesia detém os meios de produção e se apropria da riqueza; o proletariado só tem sua força de trabalho. Esse antagonismo é permanente — e é o <strong>motor da história</strong>. A riqueza da sociedade é fruto do trabalho humano, mas está <em>concentrada e não distribuída</em>.</p>
+
+        <h4>Ideologia e alienação</h4>
+        <p><strong>Complemento para melhor compreensão:</strong> seu slide cita estes dois conceitos sem detalhá-los. Em termos simples: <strong>alienação</strong> é a situação do operário que, na produção em massa, não se reconhece no produto do seu trabalho e perde a noção do processo inteiro. <strong>Ideologia</strong> é o conjunto de ideias que faz a classe dominada <em>aceitar como "natural"</em> uma ordem que a explora. Despertar a consciência dessa exploração é o que Marx chama de tomada de <em>consciência de classe</em>.</p>
+
+        <h4>Revolução, ditadura do proletariado, socialismo e comunismo</h4>
+        <p>Marx afirmava que a consciência de classe levaria os operários à <strong>luta pela tomada do poder</strong>. A sequência prevista:</p>
+        <div class="flow">
+          <div class="node"><b>1. Revolução</b>Os operários tomam o poder do Estado.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>2. Ditadura do proletariado</b>Fase de transição: o Estado, agora controlado pelos trabalhadores, elimina a propriedade privada dos meios de produção.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>3. Socialismo</b>Ainda há Estado e classes; transição rumo à igualdade.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>4. Comunismo</b>Sem classes, sem propriedade privada dos meios de produção e sem Estado. "De cada um conforme sua capacidade, a cada um conforme sua necessidade."</div>
+        </div>
+
+        <div class="box pegadinha">
+          <div class="bt">Erro comum / Pegadinha</div>
+          <p>Muita gente troca <strong>socialismo</strong> e <strong>comunismo</strong>. Para Marx, <em>não</em> são sinônimos: o socialismo é a <strong>etapa anterior</strong>, ainda com Estado e classes; o comunismo é o <strong>estágio final</strong>, em que o Estado <em>desaparece</em>. Outra pegadinha: a "ditadura do proletariado" é uma <em>fase de transição</em>, não o objetivo final.</p>
+        </div>
+
+        <h4>A Associação Internacional dos Trabalhadores</h4>
+        <p>Em <strong>1864</strong>, Marx e Engels ajudaram a organizar a <strong>Associação Internacional dos Trabalhadores (AIT)</strong> — a 1ª Internacional —, que propunha a criação de partidos políticos populares capazes de lutar pelos interesses dos trabalhadores. O objetivo era produzir uma <em>revolução socialista</em> que acabaria com o capitalismo.</p>
+        <div class="timeline">
+          <div class="ev"><span class="yr">1864</span> — <strong>1ª Internacional (AIT)</strong>: organização dos trabalhadores em escala mundial.</div>
+          <div class="ev"><span class="yr">1891</span> — <strong>2ª Internacional</strong>: predomínio de tendências mais reformistas/parlamentares.</div>
+          <div class="ev"><span class="yr">1919</span> — <strong>3ª Internacional</strong>: já no contexto pós-Revolução Russa, sob liderança comunista.</div>
+        </div>
+
+        <div class="box avanc">
+          <div class="bt">Aprofundamento</div>
+          <p>O próprio livro faz uma ressalva madura: Marx <strong>formulou suas teorias a partir do capitalismo do século XIX</strong>. Suas conclusões referem-se a um momento histórico específico — aplicá-las a outras épocas exige <em>novas reflexões</em>, "assim como qualquer teoria". Em redações e questões dissertativas, mostrar essa <strong>consciência de historicidade</strong> (toda teoria é filha do seu tempo) costuma render pontos.</p>
+        </div>
+
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova</div>
+          <p>Tríade certeira da banca: <strong>(1)</strong> mais-valia como origem do lucro; <strong>(2)</strong> a sequência revolução → ditadura do proletariado → socialismo → comunismo; <strong>(3)</strong> a diferença utópico × científico. Se você dominar esses três pontos, resolve a maioria das questões sobre marxismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ANARQUISMO -->
+    <section id="i-anarquismo">
+      <div class="card reveal">
+        <h3><span class="num">5</span>O Anarquismo</h3>
+        <p class="lead">Outro importante movimento intelectual e revolucionário do século XIX — frequentemente confundido com o marxismo, mas com uma diferença decisiva.</p>
+
+        <p>O anarquismo propunha um sistema político, filosófico e ideológico caracterizado, em linhas gerais, pela <strong>ausência de um governo</strong> e pelo <strong>fim do Estado</strong> e de sua autoridade instituída.</p>
+        <p>A proposta: a sociedade pode viver em <em>harmonia sem a necessidade de um governante</em> sobre ela. Os anarquistas defendem uma sociedade baseada na <strong>liberdade total, sem hierarquias</strong>, mais responsável. O anarquismo também é chamado de <strong>comunismo libertário</strong>.</p>
+        <p>Principais pensadores: <strong>Pierre-Joseph Proudhon</strong>, <strong>Mikhail Bakunin</strong>, o príncipe <strong>Kropotkin</strong> e o escritor <strong>Leon Tolstói</strong>.</p>
+
+        <h4>A diferença central: marxismo × anarquismo</h4>
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Aspecto</th><th>Marxismo (socialismo científico)</th><th>Anarquismo</th></tr></thead>
+          <tbody>
+            <tr><td>Inimigo</td><td>O capitalismo</td><td>O capitalismo <strong>e</strong> o Estado</td></tr>
+            <tr><td>Papel do Estado</td><td>Deve ser <em>tomado</em> pelos operários (ditadura do proletariado) e só depois desaparecer</td><td>Deve ser <em>abolido imediatamente</em> — toda forma de governo é opressão</td></tr>
+            <tr><td>Organização</td><td>Partido político e ação organizada rumo ao poder</td><td>Recusa de partidos; sociedade sem hierarquias</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="box pegadinha">
+          <div class="bt">Erro comum / Pegadinha</div>
+          <p>Atualmente o termo "anarquia" adquiriu uma conotação <strong>negativa e errônea</strong>, associada à desordem e ao caos. Em prova, isso vira armadilha: o anarquismo histórico <em>não</em> defende o caos — defende uma <strong>ordem sem Estado</strong>, baseada na cooperação livre. Marcar "anarquismo = desordem" é cair na pegadinha.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LUTAS TRABALHISTAS -->
+    <section id="i-lutas">
+      <div class="card reveal">
+        <h3><span class="num">6</span>As lutas trabalhistas</h3>
+        <p class="lead">As ideologias não ficaram só no papel: viraram movimentos concretos de organização operária.</p>
+        <p><strong>Complemento para melhor compreensão:</strong> esta parte aparece detalhada no seu slide de aula. É a "ponta prática" do tema — como os trabalhadores reagiram, na ordem cronológica.</p>
+
+        <div class="flow">
+          <div class="node"><b>Ludismo</b>Início do séc. XIX. Destruição de máquinas, vistas como responsáveis pelo desemprego e pela miséria do trabalhador.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>Cartismo</b>1838, Inglaterra. Movimento por reivindicações <em>políticas</em> — não destruía máquinas, exigia direitos.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>Sindicalismo / Trade Unions</b>Organização permanente dos trabalhadores em sindicatos para negociar direitos.</div>
+        </div>
+
+        <h4>As reivindicações do Cartismo (a "Carta do Povo")</h4>
+        <ul>
+          <li>voto universal (masculino);</li>
+          <li>voto secreto por meio de cédula;</li>
+          <li>eleições anuais para o Parlamento;</li>
+          <li>pagamento aos membros do Parlamento (para que pobres pudessem ser eleitos);</li>
+          <li>fim da exigência de posses (propriedade) para se candidatar ao Parlamento.</li>
+        </ul>
+
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção</div>
+          <p>Repare na <strong>evolução de mentalidade</strong>: o ludismo ataca a <em>máquina</em> (vista como culpada); o cartismo ataca a <em>estrutura política</em> (entende que o problema é a falta de direitos e de representação). É um amadurecimento da consciência operária — tema clássico de questão.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CATOLICISMO SOCIAL -->
+    <section id="i-igreja">
+      <div class="card reveal">
+        <h3><span class="num">7</span>O Catolicismo Social</h3>
+        <p class="lead">A Igreja Católica também reagiu — para conter o avanço das ideias de esquerda entre os operários.</p>
+        <p><strong>Complemento para melhor compreensão:</strong> tema do seu slide. A Igreja percebeu que perdia fiéis para o socialismo e o anarquismo e respondeu com sua própria doutrina social.</p>
+
+        <p>O marco é a encíclica <strong>"Rerum Novarum"</strong>, de <strong>1891</strong>, do Papa Leão XIII. Ela <em>defende concessões ao movimento operário</em> — o reconhecimento de <strong>alguns direitos trabalhistas</strong> — como forma de <strong>conter o crescimento dos grupos políticos de esquerda</strong>. Ou seja: melhorar a vida do trabalhador para evitar que ele aderisse à revolução.</p>
+
+        <div class="box compl">
+          <div class="bt">Complemento — conexão com o século XX</div>
+          <p>Nos anos 1970, na América Latina, surgirá dentro da Igreja a <strong>Teologia da Libertação</strong>: setores católicos tentaram <em>incorporar elementos do marxismo ao cristianismo</em>, com foco nos pobres. Esse movimento foi perseguido e neutralizado pelo Papa <strong>João Paulo II</strong> no fim dos anos 1980. É a "outra ponta" da relação Igreja × socialismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. NACIONALISMO -->
+    <section id="i-nacionalismo">
+      <div class="card reveal">
+        <h3><span class="num">8</span>O Nacionalismo</h3>
+        <p class="lead">Nem toda ideologia do século XIX era sobre classe social. O nacionalismo era sobre identidade e território.</p>
+
+        <p>No final do século XIX, havia na Europa muitos <strong>povos dominados por outros</strong> — submetidos a um Estado que não representava sua nação. Exemplos citados pelo livro: a <strong>submissão de eslavos</strong> (tchecos e eslovacos) e de uma porção do norte da península Itálica, ambos sob o <strong>Império Austríaco</strong>.</p>
+        <p>O resultado dessa dominação foi o surgimento do <strong>nacionalismo</strong>: um movimento que defendia a <em>liberdade desses povos para criarem um Estado próprio</em>.</p>
+
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção — dois sentidos do nacionalismo</div>
+          <p>Para povos <em>dominados</em>, o nacionalismo era <strong>libertação</strong> (criar um país). Para povos <em>já existentes mas fragmentados</em> — como na Inglaterra e na França —, a tarefa era diferente: era preciso a <strong>unificação</strong>. Daí o nacionalismo impulsionar a <strong>unificação da Itália e da Alemanha</strong>, dois processos centrais do século XIX.</p>
+        </div>
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova</div>
+          <p>A ligação <strong>nacionalismo → unificações da Itália e da Alemanha</strong> é uma das mais cobradas. Guarde a frase-chave: o nacionalismo entende que "para certos povos era necessária a formação de um país".</p>
+        </div>
+      </div>
+
+      <!-- VÍDEOS MÓDULO 1 -->
+      <div class="card reveal">
+        <h3><span class="num">▶</span>Vídeos completos recomendados — Módulo 1</h3>
+        <p>Aulas completas de professores conhecidos entre vestibulandos. <strong>Clique para ir direto ao vídeo.</strong> Os links abaixo foram verificados como vídeos públicos do YouTube no momento da elaboração desta aula; caso algum tenha sido removido pelo autor depois disso, basta buscar o título no YouTube.</p>
+        <div class="videos">
+          <a class="vbtn" href="https://www.youtube.com/watch?v=tusglmyTXIk" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">Socialismo, Comunismo e Anarquismo: as Ideologias Sociais do Século XIX</span>
+            <span class="vch">Aula completa de História Geral</span>
+          </a>
+          <a class="vbtn" href="https://www.youtube.com/watch?v=Xc4gXbx-eko" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">Ideologias do Século XIX — Socialismo, Nacionalismo, Liberalismo e Anarquismo</span>
+            <span class="vch">Aula-resumo</span>
+          </a>
+          <a class="vbtn" href="https://www.youtube.com/watch?v=MMXKytf1WCI" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">Neocolonialismo e Ideologias do Século XIX (Liberalismo vs. Socialismo) — História #25</span>
+            <span class="vch">Aula completa para o ENEM</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- ===================== MÓDULO 2 ======================= -->
+  <!-- ====================================================== -->
+  <div class="m2" id="modulo2">
+    <div class="module-head m2-head reveal">
+      <div class="tag">Módulo 2 — Unidade 3 / Capítulo 6</div>
+      <h2>A Era Napoleônica e as Independências na América Espanhola</h2>
+      <p>Do fim de Napoleão à libertação das colônias hispânicas: por que as independências aconteceram, quem as conduziu e por que a América espanhola terminou fragmentada em dezenas de países.</p>
+    </div>
+
+    <!-- 9. FIM DE NAPOLEÃO -->
+    <section id="a-napoleao">
+      <div class="card reveal">
+        <h3><span class="num">9</span>O fim de Napoleão: a Restauração e os Cem Dias</h3>
+        <p class="lead">A queda de Napoleão é o gatilho europeu que vai destravar as independências americanas. Por isso o capítulo começa por ela.</p>
+
+        <h4>O restabelecimento da monarquia</h4>
+        <p>Com a primeira queda de Napoleão, restaurou-se na França a <strong>monarquia dos Bourbon</strong>. Ao retornarem, os nobres que haviam fugido do país no início da Revolução Francesa quiseram <em>recuperar seus antigos direitos e propriedades</em> — o que gerou grande <strong>insatisfação popular</strong>.</p>
+
+        <h4>O Governo dos Cem Dias</h4>
+        <p>Percebendo o momento favorável, <strong>Napoleão fugiu da ilha de Elba</strong> e, em março de <strong>1815</strong>, retornou ao governo. Esse novo governo, porém, <em>durou apenas cem dias</em>.</p>
+        <div class="timeline">
+          <div class="ev"><span class="yr">Mar/1815</span> — Napoleão foge de Elba e retoma o poder na França.</div>
+          <div class="ev"><span class="yr">Jun/1815</span> — É <strong>derrotado definitivamente</strong> pelos ingleses na <strong>Batalha de Waterloo</strong>, na Bélgica.</div>
+          <div class="ev"><span class="yr">1815–1821</span> — Os britânicos o enviam para um lugar bem distante: a <strong>ilha de Santa Helena</strong>, no meio do Oceano Atlântico. Ele permanece preso lá <strong>até a morte, em maio de 1821</strong>.</div>
+        </div>
+
+        <div class="box pegadinha">
+          <div class="bt">Erro comum / Pegadinha</div>
+          <p>Não confunda as duas ilhas: <strong>Elba</strong> é o <em>primeiro</em> exílio (de onde Napoleão <strong>fugiu</strong>); <strong>Santa Helena</strong> é o <em>segundo</em>, mais distante e isolado (de onde <strong>não saiu</strong>). A ordem é: Elba → Cem Dias → Waterloo → Santa Helena.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. REFORMAS NAPOLEÔNICAS -->
+    <section id="a-reformas">
+      <div class="card reveal">
+        <h3><span class="num">10</span>As reformas napoleônicas — o legado duradouro</h3>
+        <p class="lead">Uma das características mais importantes do governo de Napoleão. Elas tiveram um efeito mais <em>duradouro</em> na Europa do que as próprias mudanças de fronteiras feitas pelas guerras.</p>
+
+        <p>O Império Napoleônico desapareceu com a queda de Napoleão, mas suas <strong>políticas promoveram mudanças que enterraram definitivamente as estruturas do Antigo Regime</strong> na Europa ocidental. Foi um vasto programa de reformas:</p>
+
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Reforma</th><th>O que Napoleão fez</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Ordem pública</strong></td><td>Criou o Ministério do Interior e uma <em>polícia secreta eficaz e temível</em>.</td></tr>
+            <tr><td><strong>Administração</strong></td><td>Centralizou o poder: os departamentos passaram a depender do governo central.</td></tr>
+            <tr><td><strong>Reforma fiscal</strong></td><td>Ficou determinado que <em>todos os cidadãos pagariam impostos</em> — fim dos privilégios fiscais.</td></tr>
+            <tr><td><strong>Concordata com a Igreja</strong></td><td>Assinou acordo com a Igreja Católica, que reconheceu o novo Estado francês.</td></tr>
+            <tr><td><strong>Educação</strong></td><td>Extensão do direito à educação a todos os cidadãos franceses.</td></tr>
+            <tr><td><strong>Código Civil</strong></td><td><strong>A contribuição mais importante.</strong> Racionalizou e unificou as leis; tornou-se modelo universal (exceto nos países anglo-saxões). Incluía as aspirações da burguesia, sobretudo a <em>proteção da propriedade privada</em>.</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h4>As "Repúblicas-irmãs"</h4>
+        <p>Napoleão fez com que a nova administração francesa fosse aplicada aos Estados <em>vassalos ou aliados</em>. Esses Estados foram proclamados as chamadas <strong>"Repúblicas-irmãs"</strong>, onde ficou instituído que: as monarquias seriam <strong>limitadas</strong>, haveria <strong>separação de poderes</strong>, uma legislatura eleita por <strong>voto censitário</strong>, e a <strong>sociedade estamental seria abolida</strong>.</p>
+
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova</div>
+          <p>O <strong>Código Civil Napoleônico</strong> é campeão de questões. Frase para guardar: ele "tornou-se um modelo universal" e protegia a <em>propriedade privada</em> — interesse central da burguesia. As reformas napoleônicas <strong>espalharam os princípios da Revolução Francesa pela Europa</strong>, mesmo sob um governo autoritário. Esse paradoxo (autoritarismo que difunde ideias liberais) é prato cheio para a banca.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CONQUISTA E COLÔNIA -->
+    <section id="a-conquista">
+      <div class="card reveal">
+        <h3><span class="num">11</span>Antes da independência: a Conquista e o sistema colonial</h3>
+        <p class="lead">Para entender por que as colônias quiseram se libertar, é preciso entender o que era esse domínio. (Conteúdo aprofundado a partir dos seus slides de aula.)</p>
+
+        <h4>11.1 — A Conquista (séculos XV–XVI)</h4>
+        <p>O Estado espanhol <strong>delegou à iniciativa privada</strong> o processo de ocupação e conquista. Os dois grandes feitos:</p>
+        <ul>
+          <li><strong>Fernão Cortez</strong> conquista o <strong>Império Asteca</strong> (México);</li>
+          <li><strong>Francisco Pizarro</strong> conquista o <strong>Império Inca</strong> (região do Peru e arredores).</li>
+        </ul>
+        <p>Como um punhado de espanhóis derrotou impérios inteiros? Os fatores:</p>
+        <ul>
+          <li><strong>Superioridade tecnológica</strong> — armas de fogo e de ferro;</li>
+          <li><strong>Política de alianças</strong> — os espanhóis se aliaram a povos submetidos pelos astecas e incas, que odiavam seus dominadores;</li>
+          <li><strong>Animais em combate</strong> — cavalos e cães treinados para matar;</li>
+          <li><strong>Técnicas de batalha</strong> voltadas para a destruição;</li>
+          <li><strong>Fator religioso</strong> — a crença indígena de que os europeus fossem enviados dos deuses;</li>
+          <li><strong>Guerra biológica</strong> — varíola, gripe, peste, tuberculose, sífilis: doenças contra as quais os indígenas não tinham imunidade dizimaram populações inteiras.</li>
+        </ul>
+
+        <div class="box conceito">
+          <div class="bt">Síntese — "A cruz, a espada e a fome"</div>
+          <p>A destruição das culturas pré-colombianas resultou de três elementos: a <strong>cruz</strong> (a catequese jesuítica, que provocou um <em>etnocídio</em> — destruição cultural), a <strong>espada</strong> (a superioridade bélica) e a <strong>fome</strong> (a desorganização do sistema produtivo indígena, pois grandes contingentes foram deslocados para a mineração, gerando surtos de fome). Estado e Igreja andavam aliados: a escravidão indígena era proibida — só permitida via "Guerras Justas".</p>
+        </div>
+
+        <h4>11.2 — O sistema colonial (séculos XVI a XIX)</h4>
+        <p><strong>Exploração do trabalho.</strong> Dois sistemas conviviam:</p>
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Sistema</th><th>Onde / Como</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Trabalho compulsório indígena</strong> — <em>Mita</em>, <em>Encomienda</em> (Repartimiento)</td><td>Áreas mineradoras: México, Peru, Bolívia. A Mita já existia no período pré-colombiano e foi reaproveitada.</td></tr>
+            <tr><td><strong>Trabalho escravo africano</strong></td><td>Áreas de <em>plantation</em>: Antilhas e regiões da América Central e do Sul.</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p><strong>A sociedade colonial</strong> era rigidamente hierarquizada:</p>
+        <div class="schema">
+<span class="h">PIRÂMIDE SOCIAL DA AMÉRICA ESPANHOLA</span>
+
+  <span class="h">CHAPETONES</span>   espanhóis nascidos na Espanha — cargos políticos e administrativos
+       <span class="ar">▲</span>
+   <span class="h">CRIOLLOS</span>     descendentes de espanhóis nascidos na América —
+                ELITE ECONÔMICA (terras, comércio), mas EXCLUÍDA do poder político
+       <span class="ar">▲</span>
+   <span class="h">MESTIÇOS</span>     miscigenação (branco + índio)
+       <span class="ar">▲</span>
+    <span class="h">ÍNDIOS</span>      base — trabalho compulsório
+       <span class="ar">▲</span>
+ <span class="h">ESCRAVOS AFRICANOS</span>   base — trabalho escravo
+        </div>
+
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção — guarde isto, é a chave de todo o módulo</div>
+          <p>O conflito central da independência nasce de uma <strong>contradição na elite</strong>: os <strong>criollos</strong> tinham o <em>dinheiro</em> (eram a elite econômica), mas <strong>não tinham o poder político</strong> — os cargos eram monopólio dos chapetones, nascidos na Espanha. Essa elite rica e politicamente frustrada será a grande protagonista das independências.</p>
+        </div>
+
+        <h4>11.3 — O sistema de exploração e a administração</h4>
+        <p>A metrópole impunha o <strong>"Exclusivo Metropolitano"</strong> (a colônia só podia comerciar com a Espanha) por meio de mecanismos rígidos: o <strong>sistema de portos únicos</strong> (de Sevilha rumo a Cartagena, Porto Belo e Vera Cruz) e os <strong>comboios</strong> — frotas que iam à América apenas duas vezes ao ano.</p>
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Na Metrópole (Espanha)</th><th>Na Colônia (América)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Casa de Contratación</strong> e <strong>Conselho das Índias</strong> — sediados em Sevilha; controlavam o comércio e a administração.</td><td>Divisão em <strong>Vice-Reinos</strong> e <strong>Capitanias</strong>; criação das <strong>Audiências</strong> (justiça) e formação dos <strong>Cabildos</strong> (câmaras municipais).</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="box compl">
+          <div class="bt">Complemento — guarde esta frase de efeito</div>
+          <p>O slide de aula resume a economia colonial com uma frase que cai bem em redação: <em>"O ouro deixou buracos na América, palácios na Espanha e fábricas na Inglaterra"</em>. Ela mostra que a riqueza extraída <strong>não ficava nem na colônia nem na própria Espanha</strong> — acabava financiando a industrialização inglesa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. CRISE DO SISTEMA COLONIAL -->
+    <section id="a-crise">
+      <div class="card reveal">
+        <h3><span class="num">12</span>A crise do sistema colonial na América</h3>
+        <p class="lead">As colônias espanholas estavam submetidas à metrópole, que as colonizava, explorava e administrava todos os aspectos da vida nesses territórios.</p>
+
+        <p>Aos habitantes das colônias cabia obedecer às determinações políticas, econômicas e culturais e pagar uma série de <strong>impostos e tributos</strong> ao governo espanhol. <strong>Não havia liberdade econômica</strong> para comercializar com outros países — só com a metrópole, mesmo que isso significasse prejuízo para os colonos. Esse conjunto de leis e normas recebeu o nome de <strong>pacto colonial</strong> e beneficiava a metrópole e as autoridades coloniais.</p>
+
+        <p>As regiões coloniais tiveram grande desenvolvimento nos primeiros séculos, sobretudo pela <strong>extração de ouro e prata</strong> com mão de obra indígena. A Espanha obtinha também açúcar, cacau, algodão, couro e tabaco. Mas, durante o <strong>século XVIII</strong>, a economia colonial entrou em <strong>crise</strong>, o que provocou <em>aumento dos impostos</em> e <em>desgosto generalizado</em> dos colonos.</p>
+
+        <h4>As revoltas precursoras</h4>
+        <p>Foi nesse contexto que ocorreram movimentos importantes de contestação da ordem colonial:</p>
+        <div class="timeline">
+          <div class="ev"><span class="yr">1742–1756</span> — Revolta liderada por <strong>Atahualpa</strong>, no Peru.</div>
+          <div class="ev"><span class="yr">1780–1781</span> — <strong>Túpac Amaru</strong> (José Gabriel Condorcanqui), chefe descendente do Império Inca, levou os indígenas a lutar contra a Espanha para <em>restabelecer a grandeza da civilização inca</em>. Após três anos de lutas, foi executado em 1781, na praça de Cuzco, antiga capital inca. <strong>É o "Projeto Indígena".</strong></div>
+          <div class="ev"><span class="yr">1781</span> — Revolta do movimento <strong>Comunero</strong>, no Vice-Reino de Nova Granada.</div>
+        </div>
+        <p>Nas décadas seguintes, as insatisfações cresceram e, sob influência das transformações internacionais, deram início aos movimentos de independência da América espanhola.</p>
+
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção — três focos de revolta</div>
+          <p>O livro destaca que as revoltas contra a Espanha partiram de <strong>três focos principais</strong>: <strong>Cidade do México</strong>, <strong>Buenos Aires</strong> e <strong>Caracas</strong>. Esses movimentos começaram a se organizar na <strong>década de 1810</strong> e, progressivamente, criaram governos autônomos e independentes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. CAUSAS -->
+    <section id="a-causas">
+      <div class="card reveal">
+        <h3><span class="num">13</span>As causas das independências: fatores internos e externos</h3>
+        <p class="lead">As independências na América espanhola foram provocadas por fatores internos e externos. Esta é a divisão que a banca mais cobra — domine-a.</p>
+
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Fatores INTERNOS</th><th>Fatores EXTERNOS</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul style="margin-left:1em">
+                  <li>Imposição de <strong>elevados tributos</strong> e restrições comerciais pela administração espanhola;</li>
+                  <li>Populações <strong>excluídas</strong> (indígenas e africanos escravizados) desejavam mudanças sociais e o fim da exploração;</li>
+                  <li>As <strong>elites criollas</strong> desejavam mudanças políticas e <em>participação mais efetiva</em> na administração de seus territórios.</li>
+                </ul>
+              </td>
+              <td>
+                <ul style="margin-left:1em">
+                  <li>Disseminação dos <strong>ideais iluministas</strong> de liberdade, igualdade e fraternidade;</li>
+                  <li>O sucesso da <strong>Independência dos Estados Unidos</strong>;</li>
+                  <li>O impacto da <strong>Revolução Francesa</strong>;</li>
+                  <li>A <strong>Revolução Haitiana</strong> (década de 1790, São Domingos);</li>
+                  <li>A <strong>invasão napoleônica da Espanha</strong>, que enfraqueceu o controle metropolitano.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h4>O "medo do Haiti" — um fator decisivo</h4>
+        <p>Atenção a este ponto sutil e muito cobrado: a Revolução Haitiana foi, ao mesmo tempo, <strong>inspiração e medo</strong>. No início da década de 1790, escravizados se revoltaram na colônia francesa de São Domingos. Esse movimento provocou profundas mudanças sociais e fez com que as <strong>elites criollas temessem</strong> que as lutas pela independência provocassem o <em>colapso das hierarquias sociais existentes</em>.</p>
+
+        <div class="schema">
+<span class="h">A EQUAÇÃO POLÍTICA DOS CRIOLLOS</span>
+
+QUEREM:  autonomia política (livrar-se dos chapetones)
+EVITAM:  transformação social radical (o "exemplo Haiti" — fim das hierarquias)
+                          <span class="ar">│</span>
+                          ▼
+RESULTADO: independência CONSERVADORA — troca-se quem manda,
+           mas a estrutura social (escravidão, latifúndio) PERMANECE.
+        </div>
+
+        <h4>O gatilho final: a invasão de Napoleão</h4>
+        <p>A Espanha tentou conter as ideias emancipacionistas, mas a <strong>invasão de seu território pelas tropas napoleônicas enfraqueceu esse controle</strong>. As elites <em>peninsulares</em> (nascidas na Espanha) declararam guerra aos franceses. Os <strong>criollos</strong>, entretanto, perceberam que <strong>era o momento</strong> de buscar a libertação e a emancipação da América.</p>
+
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova</div>
+          <p>A questão clássica liga a independência hispânica a <strong>1808</strong>: a deposição do rei <strong>Fernando VII</strong>, quando as tropas francesas ocuparam a Espanha e Napoleão colocou seu irmão <strong>José Bonaparte</strong> no trono. A reação nas colônias foi a formação das <strong>Juntas Governativas</strong> — de caráter separatista e lideradas pelos criollos. Decore: <em>invasão de Napoleão → vazio de poder → Juntas Governativas → independências.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. PROCESSO E LIBERTADORES -->
+    <section id="a-processo">
+      <div class="card reveal">
+        <h3><span class="num">14</span>O processo: fases, motivos e os Libertadores da América</h3>
+        <p class="lead">Quem conduziu as independências, com quais motivos e em quantas etapas.</p>
+
+        <h4>Os motivos do movimento criollo</h4>
+        <ul>
+          <li>A <strong>elite criolla excluída</strong> dos cargos políticos e administrativos da colônia;</li>
+          <li>Interesse na <strong>liberdade comercial</strong> (fim do pacto colonial) — ponto de <em>convergência com os interesses ingleses</em>, que queriam novos mercados.</li>
+        </ul>
+
+        <h4>Os movimentos precursores</h4>
+        <p><strong>Francisco Miranda</strong>, em <strong>1806</strong>, tentou iniciar um movimento a partir da Venezuela — o "Projeto Criollo" —, mas <em>fracassou</em>. Em paralelo, lembre-se da <strong>Rebelião de Túpac Amaru (1780)</strong>, que representava o "Projeto Indígena". Havia, portanto, <em>dois projetos distintos</em> de independência disputando o continente.</p>
+
+        <h4>Os Libertadores da América</h4>
+        <p>O movimento emancipacionista contou com a liderança dos <strong>"libertadores da América"</strong> — todos membros da elite criolla: <strong>Simón Bolívar</strong>, <strong>José de San Martín</strong>, <strong>José de Sucre</strong>, <strong>Bernardo O'Higgins</strong> e <strong>Agustín Itúrbide</strong>. Foram eles que comandaram as forças <em>criollas</em> nos territórios das atuais Argentina, Chile, Venezuela, Colômbia e Peru. Para libertar o continente, enfrentaram as montanhas da <strong>Cordilheira dos Andes</strong> em grandes batalhas, decretando o fim do período colonial.</p>
+
+        <h4>As duas fases da luta</h4>
+        <div class="flow">
+          <div class="node"><b>Fase 1 — 1810/1814</b>O "lealismo" das elites coloniais ainda servia de argumento contra a ruptura. Foram anos de <em>derrotas militares</em>, sem apoio inglês substancial. Destaca-se a tentativa do México (padres Hidalgo e Morelos), que ameaçava tanto chapetones quanto criollos.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>Fase 2 — 1815/1825</b>Com apoio militar e financeiro inglês <em>mais consistente</em>, a luta recomeça e as vitórias se tornam possíveis. <strong>Bolívar</strong> conduz o processo do norte (Venezuela); <strong>San Martín</strong>, do sul para o norte.</div>
+        </div>
+
+        <div class="box compl">
+          <div class="bt">Complemento — o Encontro de Guayaquil (1822)</div>
+          <p>Os dois grandes libertadores se encontraram em <strong>Guayaquil</strong> (atual Equador). Ali, <strong>San Martín abriu mão da luta em benefício do projeto de Bolívar</strong>, retirando-se da cena política. Esse gesto unificou a liderança da independência sul-americana sob Bolívar.</p>
+        </div>
+
+        <h4>Dois projetos para a América livre</h4>
+        <div class="tablewrap">
+        <table>
+          <thead><tr><th>Simón Bolívar</th><th>José de San Martín</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Defendia a <strong>unidade política interamericana</strong>: uma <em>Confederação</em> de países latino-americanos. Esse sonho ficou conhecido como <strong>Bolivarismo</strong> ou <strong>pan-americanismo</strong>. Projeto <strong>republicano</strong>.</td>
+              <td>Defendia que as ex-colônias se tornassem <strong>monarquias</strong>, governadas por <em>príncipes europeus</em> convidados. Projeto <strong>monarquista</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção — por que o sonho de Bolívar tinha inimigos poderosos</div>
+          <p>O Bolivarismo teve a <strong>oposição da Inglaterra e dos Estados Unidos</strong>. A lógica do "dividir para controlar": para os <strong>EUA</strong>, uma América hispânica fragmentada facilitaria sua hegemonia sobre a região (lógica da <strong>Doutrina Monroe</strong>, "a América para os americanos"); para a <strong>Inglaterra</strong>, a fragmentação consolidava sua <em>hegemonia econômica</em> (vários países fracos compram mais produtos ingleses do que um país forte e unido).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. CASOS -->
+    <section id="a-casos">
+      <div class="card reveal">
+        <h3><span class="num">15</span>Casos específicos de independência</h3>
+        <p class="lead">Cada colônia teve um caminho próprio. Estes quatro casos são os mais cobrados — estude as particularidades de cada um.</p>
+
+        <h4>15.1 — São Domingos / Haiti (1804)</h4>
+        <p>A colônia <strong>francesa</strong> de São Domingos foi palco de uma grande revolução liderada por <strong>escravizados</strong>. O movimento teve início após a eclosão da Revolução Francesa: em <strong>1794</strong>, os escravizados africanos da ilha se revoltaram e obtiveram a liberdade. Destacou-se a liderança de <strong>Toussaint Louverture</strong>, um antigo escravizado que assumiu o controle do governo.</p>
+        <p>Mais tarde, Napoleão enviou um exército para <em>retomar a escravidão</em>. Os soldados franceses, porém, depois de enfrentarem doenças como a <strong>febre amarela</strong>, foram derrotados pelos rebeldes. Em <strong>1º de janeiro de 1804</strong>, foi declarada a independência haitiana.</p>
+        <div class="box cai">
+          <div class="bt">O que mais cai — o Haiti é "duplo recorde"</div>
+          <p>O Haiti foi o <strong>primeiro território americano a abolir a escravidão</strong> e também a <em>proclamar a independência</em> como nação livre. Foi a <strong>única independência conduzida pelos de baixo</strong> (escravizados) — exatamente por isso virou o "fantasma" que assustou as elites criollas de toda a América.</p>
+        </div>
+
+        <h4>15.2 — Paraguai (1811)</h4>
+        <p>A independência do Paraguai foi declarada em <strong>1811</strong>, <em>quase sem lutas ou batalhas</em>. O grande nome foi <strong>José Gaspar Rodríguez de Francia</strong>, advogado admirador das ideias iluministas de igualdade, educação e liberdade. <strong>Sem a pressão de grandes grupos econômicos ingleses</strong>, Francia pôde desenvolver uma <em>indústria nacional</em> e o sentimento nacionalista paraguaio.</p>
+        <div class="box pegadinha">
+          <div class="bt">Pegadinha</div>
+          <p>O Paraguai é a <strong>exceção</strong> que confirma a regra. Enquanto a regra geral foi "independência + dependência econômica da Inglaterra", o Paraguai conseguiu uma trajetória <em>autônoma e industrializante</em> justamente por <strong>ficar fora</strong> da influência inglesa. Bancas usam o Paraguai para testar se você entendeu o padrão geral.</p>
+        </div>
+
+        <h4>15.3 — México (1821)</h4>
+        <p>A primeira tentativa ocorreu no fim do século XVIII, quando os padres criollos <strong>Miguel Hidalgo y Costilla</strong> e <strong>José María Morelos y Pavón</strong> iniciaram um movimento separatista de caráter <em>popular e social</em>. Ambos foram mortos: Hidalgo pelas autoridades peninsulares; Morelos pelos próprios <strong>criollos</strong>, que não concordavam com suas propostas de reformas sociais radicais.</p>
+        <p>Em suas lutas, conseguiram conquistas notáveis: <strong>abolir a escravidão</strong>, reduzir impostos, encerrar os tributos indígenas e acabar com a obrigação de os indígenas arrendarem suas terras a grandes proprietários. Por isso a população indígena via na independência uma <em>oportunidade de liberdade</em>.</p>
+        <p>Apesar de tudo isso, a independência mexicana só aconteceu em <strong>1821</strong>, pela ação dos <strong>criollos</strong> — entre eles <strong>Agustín Itúrbide</strong>. Com medo de que as ideias liberais que dominavam a Espanha chegassem ao país, eles resolveram fazer uma independência <em>"à sua maneira"</em>: ficando com o poder e <strong>sem promover reformas sociais amplas</strong>.</p>
+        <div class="box atencao">
+          <div class="bt">Ponto de atenção — México é o exemplo perfeito de "independência conservadora"</div>
+          <p>Repare na guinada: começou como movimento <strong>popular</strong> (Hidalgo e Morelos, com pauta social) e terminou como movimento <strong>conservador</strong> (Itúrbide e os criollos, para <em>barrar</em> mudanças sociais). É o caso-modelo da independência feita "pelo alto", para a elite manter o controle.</p>
+        </div>
+
+        <h4>15.4 — Cuba (1898)</h4>
+        <p>Cuba só conquistou a independência <em>no final do século XIX</em>, apesar de muitas lutas anteriores. Os EUA tentaram várias vezes comprar a ilha; a Espanha se recusou a vendê-la.</p>
+        <p>Em <strong>1895</strong>, eclodiu a mais importante revolta cubana, liderada por <strong>José Martí</strong>. Em <strong>1898</strong>, um incidente mudou os rumos: a explosão de um navio norte-americano (o <em>USS Maine</em>) — episódio misterioso, atribuído à Espanha, considerada culpada. Os EUA declararam guerra. Em poucos meses, a Espanha se rendeu e entregou <strong>Porto Rico e Cuba aos norte-americanos</strong>.</p>
+        <p>Os cubanos continuaram lutando e, em <strong>1901</strong>, conseguiram uma Constituição — mas foram obrigados a aceitar a inclusão de uma emenda, a <strong>Emenda Platt</strong>, que <em>reduzia a independência</em> de Cuba e permitia a intervenção estadunidense na ilha. Em <strong>1903</strong>, um tratado autorizou os EUA a usar duas bases militares, entre elas a da <strong>Baía de Guantánamo</strong> (usada até hoje).</p>
+        <div class="box compl">
+          <div class="bt">Complemento — o desfecho cubano</div>
+          <p>Cuba apenas trocou de "dono": saiu do domínio espanhol e entrou na área de influência dos EUA. A plena autonomia só seria conquistada na <strong>década de 1950, com Fidel Castro</strong>, a partir da Revolução Cubana.</p>
+        </div>
+        <div class="box cai">
+          <div class="bt">O que mais cai — Cuba e a Doutrina Monroe na prática</div>
+          <p>O caso cubano é a <strong>demonstração concreta</strong> do imperialismo norte-americano sobre a América Latina. Conecte sempre: <em>Doutrina Monroe</em> (1823, teoria) → <em>Emenda Platt e Guantánamo</em> (1901–1903, prática).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. PÓS-INDEPENDÊNCIA -->
+    <section id="a-pos">
+      <div class="card reveal">
+        <h3><span class="num">16</span>O pós-independência: caudilhismo, oligarquias e fragmentação</h3>
+        <p class="lead">A independência não trouxe estabilidade nem democracia. Entender o "depois" é tão cobrado quanto o "durante".</p>
+
+        <h4>O Congresso do Panamá (1826) e o fim do sonho bolivariano</h4>
+        <p>Em <strong>1826</strong>, as lideranças criollas se reuniram no <strong>Congresso do Panamá</strong> para discutir a proposta de Bolívar: o pan-americanismo (uma espécie de "Estados Unidos da América Espanhola", com exército comum e abolição da escravatura). <strong>A proposta fracassou.</strong> Os motivos:</p>
+        <ul>
+          <li>Disputas pelo poder dentro da própria elite criolla;</li>
+          <li>Ausência de integração econômica entre as várias regiões americanas;</li>
+          <li>A divisão político-administrativa já existente no período colonial — os <strong>Vice-Reinos</strong>;</li>
+          <li>A oposição dos <strong>EUA e da Inglaterra</strong>.</li>
+        </ul>
+
+        <h4>Os regimes oligárquicos</h4>
+        <p>Formaram-se <strong>Repúblicas liberais</strong>, mas com <em>vários critérios de exclusão política</em>: <strong>voto censitário</strong> (só vota quem tem renda), exclusão de analfabetos etc. Isso garantiu regimes de caráter <strong>oligárquico</strong>.</p>
+        <div class="box conceito">
+          <div class="bt">Conceito — Regime oligárquico</div>
+          <p>Regime político em que o poder é exercido por um <strong>pequeno grupo de pessoas</strong>, pertencentes ao mesmo partido, classe ou família. As estruturas econômicas e sociais <em>coloniais</em> foram preservadas: economia agroexportadora, escravidão ou exploração do trabalho indígena.</p>
+        </div>
+        <p>Essas novas nações se integraram ao <strong>sistema capitalista industrial inglês</strong> como <em>fornecedoras de matérias-primas</em> e <em>consumidoras de produtos industriais</em>. O Estado ficou nas mãos da elite criolla, que assim garantiu seus interesses.</p>
+
+        <h4>O Caudilhismo — o principal fenômeno político do período</h4>
+        <p>Após as independências, as nações latino-americanas passaram a organizar seus próprios governos, o que provocou o surgimento do <strong>caudilhismo</strong>. O <strong>caudilho</strong> era:</p>
+        <div class="flow">
+          <div class="node"><b>Quem era</b>Um chefe político local, <strong>grande proprietário de terras</strong>, figura forte, carismática e ligada a setores tradicionais da sociedade.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>Como chegava ao poder</b>Pela <strong>força</strong>: golpes, revoltas armadas. Muitos vinham das forças militares criadas na luta pela independência.</div>
+          <div class="arrow">→</div>
+          <div class="node"><b>O que fazia</b>Procurava <strong>manter as mesmas estruturas</strong> sociais e econômicas herdadas do período colonial. Excluía a maioria da população dos direitos políticos.</div>
+        </div>
+        <p>O caudilhismo foi responsável pela grande <strong>instabilidade</strong> na formação dos Estados Nacionais e contribuiu de maneira decisiva para a <strong>fragmentação política e territorial</strong> da América Hispânica.</p>
+
+        <h4>Por que a América espanhola se fragmentou em tantos países?</h4>
+        <div class="schema">
+<span class="h">FATORES DA FRAGMENTAÇÃO TERRITORIAL</span>
+
+ [1] Caudilhismo  ──────────┐
+ [2] Ausência de vínculos   │
+     econômicos entre as    ├──▶  AMÉRICA HISPÂNICA
+     colônias               │     DIVIDIDA EM DEZENAS
+ [3] Divisão colonial em    │     DE PAÍSES
+     Vice-Reinos/Capitanias │     (≠ EUA, que ficaram unidos)
+ [4] Conflito entre as      │
+     oligarquias pelo poder ┘
+ [5] Oposição de EUA e Inglaterra ao projeto de unidade
+        </div>
+
+        <div class="box cai">
+          <div class="bt">O que mais cai em prova — comparação obrigatória</div>
+          <p>A banca <strong>adora</strong> comparar: as <em>13 Colônias inglesas</em> se uniram em um só país (EUA); a <em>América espanhola</em> se fragmentou em muitos. Tenha sempre na ponta da língua os <strong>cinco fatores</strong> da fragmentação acima — e a ideia de que o caudilhismo <strong>manteve o atraso colonial</strong>, em vez de modernizar.</p>
+        </div>
+        <div class="box avanc">
+          <div class="bt">Aprofundamento — a "independência incompleta"</div>
+          <p>Olhando o módulo inteiro, surge uma tese poderosa para redações: as independências hispano-americanas foram <strong>políticas, mas não sociais</strong>. Trocou-se o domínio espanhol pela dependência econômica inglesa; trocou-se o chapetón pelo criollo no comando — mas a <em>escravidão, o latifúndio e a exclusão política da maioria permaneceram</em>. Foi uma "revolução pelo alto", conduzida pela elite e para a elite. Essa chave de leitura organiza praticamente todo o conteúdo deste módulo.</p>
+        </div>
+      </div>
+
+      <!-- VÍDEOS MÓDULO 2 -->
+      <div class="card reveal">
+        <h3><span class="num">▶</span>Vídeos completos recomendados — Módulo 2</h3>
+        <p>Aulas completas de canais conhecidos entre vestibulandos. <strong>Clique para ir direto ao vídeo.</strong> Links verificados como públicos no momento da elaboração; se algum tiver sido removido pelo autor, busque o título no YouTube.</p>
+        <div class="videos">
+          <a class="vbtn" href="https://www.youtube.com/watch?v=bU_RdmtPYUM" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">História Geral #41 — Independência da América Espanhola</span>
+            <span class="vch">Aula completa para ENEM e vestibulares</span>
+          </a>
+          <a class="vbtn" href="https://www.youtube.com/watch?v=t9Xlntk-2Dg" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">Independência da América Espanhola</span>
+            <span class="vch">Videoaula — Brasil Escola</span>
+          </a>
+          <a class="vbtn" href="https://www.youtube.com/watch?v=DlgjPjUxJ0o" target="_blank" rel="noopener">
+            <span class="play">Assistir agora</span>
+            <span class="vtitle">Independência da América Espanhola e o Haiti — Aula 16</span>
+            <span class="vch">Live de revisão de Humanas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- ===================== EXERCÍCIOS ====================== -->
+  <!-- ====================================================== -->
+  <section id="quiz">
+    <div class="module-head reveal" style="background:linear-gradient(120deg,#262344,#3a3663)">
+      <div class="tag">Hora de praticar</div>
+      <h2>Exercícios de Vestibular Resolvidos</h2>
+      <p>As questões abaixo são as que apareceram nos seus slides de aula. Tente responder antes de abrir o gabarito comentado.</p>
+    </div>
+
+    <div class="quiz reveal">
+      <span class="qnum">Questão 1</span> &nbsp; <span class="qsrc">UCSAL</span>
+      <p class="qtext">A decadência do colonialismo na América e a consequente aceleração do processo de independência do continente americano deveu-se, entre outras causas:</p>
+      <ul class="opts">
+        <li><strong>a)</strong> ao crescente desenvolvimento do capitalismo comercial, que tinha no monopólio uma barreira para se expandir;</li>
+        <li><strong>b)</strong> à política expansionista de Napoleão e ao crescente desenvolvimento industrial da Inglaterra;</li>
+        <li><strong>c)</strong> ao desenvolvimento econômico das colônias inglesas, que passaram a defender os interesses europeus;</li>
+        <li><strong>d)</strong> ao crescimento da economia das colônias americanas, que pretendiam concorrer no comércio internacional;</li>
+        <li><strong>e)</strong> à adoção do neoliberalismo pelos países europeus, que provocou um aumento de controle na área colonial.</li>
+      </ul>
+      <details>
+        <summary>Ver gabarito comentado</summary>
+        <div class="answer">
+          <p class="key">Resposta: A</p>
+          <p>O cerne da crise colonial é econômico: o <strong>capitalismo comercial em expansão</strong> esbarrava no <em>monopólio metropolitano</em> (o pacto colonial), que impedia o livre comércio. Esse é o fator estrutural da decadência do sistema. <strong>Por que as outras estão erradas:</strong> <strong>(c)</strong> as colônias inglesas não defendiam "interesses europeus" — buscavam autonomia; <strong>(d)</strong> as colônias não tinham economia autônoma para "concorrer" no comércio internacional — eram fornecedoras subordinadas; <strong>(e)</strong> <em>anacronismo clássico</em> — neoliberalismo é fenômeno do século XX, não do XVIII–XIX. A alternativa <strong>(b)</strong> cita fatos reais (Napoleão e a indústria inglesa), mas a banca considera <strong>(a)</strong> a melhor resposta por apontar a <em>contradição econômica de fundo</em> que move todo o processo.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="quiz reveal">
+      <span class="qnum">Questão 2</span> &nbsp; <span class="qsrc">FGV</span>
+      <p class="qtext">Na <em>Carta da Jamaica</em>, de 1815, Simón Bolívar escreveu: "Eu desejo, mais do que qualquer outro, ver formar-se na América a maior nação do mundo, menos por sua extensão e riquezas do que pela liberdade e glória". A intenção de uma América hispânica independente e formando um único país, entre outros motivos, não prevaleceu em razão:</p>
+      <ul class="opts">
+        <li><strong>a)</strong> de um acordo entre franceses e ingleses, assinado no Congresso de Viena;</li>
+        <li><strong>b)</strong> do interesse espanhol em enfraquecer o poderoso Vice-Reinado da Nova Granada;</li>
+        <li><strong>c)</strong> dos fortes e decisivos interesses ingleses, norte-americanos e das próprias elites locais da América;</li>
+        <li><strong>d)</strong> da deliberada ação do Brasil, preocupado com a formação de um poderoso Estado na América;</li>
+        <li><strong>e)</strong> das tensões entre as elites do México e Peru, que disputavam a hegemonia sobre a América.</li>
+      </ul>
+      <details>
+        <summary>Ver gabarito comentado</summary>
+        <div class="answer">
+          <p class="key">Resposta: C</p>
+          <p>O sonho de unidade de Bolívar (o <strong>Bolivarismo</strong>) fracassou pela combinação de três oposições: a <strong>Inglaterra</strong> (que lucrava com a fragmentação, pois vários países fracos compram mais), os <strong>Estados Unidos</strong> (que queriam hegemonia sobre a região — lógica da Doutrina Monroe) e as <strong>próprias elites criollas locais</strong> (divididas por disputas internas de poder). A alternativa <strong>(c)</strong> reúne exatamente esses três fatores. As demais inventam protagonistas (Brasil, México × Peru) ou eventos que não têm relação causal com o fracasso do projeto.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="quiz reveal">
+      <span class="qnum">Questão 3</span> &nbsp; <span class="qsrc">Sobre o caudilhismo</span>
+      <p class="qtext">Sobre o caudilhismo na América Latina durante o século XIX, é correto afirmar que:</p>
+      <ul class="opts">
+        <li><strong>a)</strong> contribuiu para o processo de industrialização das antigas áreas coloniais;</li>
+        <li><strong>b)</strong> os caudilhos realizaram ampla reforma agrária e governavam obedecendo à vontade popular;</li>
+        <li><strong>c)</strong> foi responsável pela manutenção do equilíbrio da balança comercial favorável, explicando a rápida industrialização;</li>
+        <li><strong>d)</strong> manteve as estruturas coloniais e contribuiu para o atraso econômico e a fragmentação territorial da América Latina;</li>
+        <li><strong>e)</strong> de origem chapetone, os caudilhos auxiliaram a Espanha em sua tentativa de recolonizar a América.</li>
+      </ul>
+      <details>
+        <summary>Ver gabarito comentado</summary>
+        <div class="answer">
+          <p class="key">Resposta: D</p>
+          <p>O caudilho era um <strong>grande proprietário de terras</strong> que buscava <em>conservar</em> as estruturas coloniais — agroexportação, latifúndio, exclusão política. Logo, esteve associado ao <strong>atraso econômico</strong> e à <strong>fragmentação territorial</strong>, e não à modernização. <strong>Por que as outras estão erradas:</strong> (a) e (c) atribuem ao caudilhismo uma "industrialização" que não ocorreu; (b) caudilhos <em>não</em> faziam reforma agrária nem obedeciam à vontade popular — chegavam ao poder pela força; (e) os caudilhos eram, em geral, <strong>criollos</strong> oriundos das forças militares da independência, e <em>não</em> chapetones aliados da Espanha.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="quiz reveal">
+      <span class="qnum">Questão 4</span> &nbsp; <span class="qsrc">UNICAMP — Discursiva</span>
+      <p class="qtext">"Tens que combater três inimigos: a sacristia, o capital e o quartel. O primeiro é a noite, o segundo é a fome, o terceiro é a morte." (Jornal <em>A Questão Social</em>, Santos, 1896.) Explique esta afirmação dos operários socialistas brasileiros do final do século XIX.</p>
+      <details>
+        <summary>Ver resposta-modelo comentada</summary>
+        <div class="answer">
+          <p class="key">Resposta-modelo</p>
+          <p>O texto expressa a visão de mundo dos trabalhadores ligados ao <strong>socialismo</strong> e ao <strong>anarquismo</strong> no Brasil do fim do século XIX — período de industrialização incipiente e de chegada de imigrantes europeus já influenciados por essas ideologias. Cada "inimigo" simboliza uma estrutura de opressão:</p>
+          <ul>
+            <li><strong>A sacristia ("a noite")</strong> — a <em>Igreja</em>, acusada de difundir o conformismo e a aceitação resignada da pobreza; a "noite" representa a <strong>ignorância e o obscurantismo</strong> que mantêm o trabalhador submisso (ideia próxima do conceito de <em>alienação</em>).</li>
+            <li><strong>O capital ("a fome")</strong> — o <em>capitalismo</em> e a burguesia, responsáveis pela <strong>exploração do trabalho</strong> (a mais-valia) e pelos baixos salários que condenavam o operário à miséria.</li>
+            <li><strong>O quartel ("a morte")</strong> — o <em>Estado</em> e suas forças militares/policiais, instrumentos de <strong>repressão violenta</strong> às greves e às organizações operárias.</li>
+          </ul>
+          <p>A frase sintetiza, portanto, a luta operária em <strong>três frentes simultâneas</strong> — contra a ignorância imposta, contra a exploração econômica e contra a repressão do Estado. O fato de incluir o "quartel/Estado" entre os inimigos revela a forte presença do <strong>pensamento anarquista</strong> entre esses trabalhadores, já que, para os anarquistas, o próprio Estado deveria ser combatido e abolido.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- ===================== REVISÃO ========================= -->
+  <!-- ====================================================== -->
+  <section id="revisao">
+    <div class="review reveal">
+      <h2>Revisão final — os conceitos que você não pode esquecer</h2>
+      <p style="color:#cfc9dd">Releia este bloco na véspera da prova. Se você souber explicar cada item abaixo, dominou a aula.</p>
+
+      <h3 style="color:var(--ochre-soft);margin-top:24px;font-size:1.2rem">Módulo 1 — Ideologias do Século XIX</h3>
+      <div class="rgrid">
+        <div class="ritem"><b>Crise de superprodução</b><span>Produz-se muito, mas o operário mal pago não consome → desemprego e miséria. É o problema que origina as ideologias.</span></div>
+        <div class="ritem"><b>Liberalismo</b><span>Adam Smith; Estado fora da economia. Malthus, Ricardo (lei de bronze dos salários) e Nassau Senior "naturalizam" a pobreza.</span></div>
+        <div class="ritem"><b>Socialismo utópico × científico</b><span>Utópico (Fourier, Saint-Simon, Owen): muda a sociedade sem abolir a propriedade. Científico (Marx, Engels): operários tomam o poder.</span></div>
+        <div class="ritem"><b>Conceitos marxistas</b><span>Mais-valia, materialismo histórico-dialético, luta de classes, ideologia/alienação. Sequência: revolução → ditadura do proletariado → socialismo → comunismo.</span></div>
+        <div class="ritem"><b>Anarquismo</b><span>Proudhon, Bakunin, Kropotkin. Combate o capitalismo E o Estado. Não é "caos" — é ordem sem governo.</span></div>
+        <div class="ritem"><b>Lutas trabalhistas</b><span>Ludismo (destrói máquinas) → Cartismo 1838 (reivindicações políticas) → Sindicalismo. Internacionais: 1864 / 1891 / 1919.</span></div>
+        <div class="ritem"><b>Catolicismo Social</b><span>Encíclica Rerum Novarum (1891): concede direitos ao operário para conter a esquerda.</span></div>
+        <div class="ritem"><b>Nacionalismo</b><span>Povos dominados querem Estado próprio; povos fragmentados querem unir-se → unificações de Itália e Alemanha.</span></div>
+      </div>
+
+      <h3 style="color:var(--ochre-soft);margin-top:28px;font-size:1.2rem">Módulo 2 — Era Napoleônica e Independências</h3>
+      <div class="rgrid">
+        <div class="ritem"><b>Fim de Napoleão</b><span>Fuga de Elba → Cem Dias (1815) → derrota em Waterloo → exílio definitivo em Santa Helena (morte em 1821).</span></div>
+        <div class="ritem"><b>Reformas napoleônicas</b><span>Código Civil (modelo universal, protege a propriedade), centralização, concordata, todos pagam impostos. Espalham ideais da Revolução Francesa.</span></div>
+        <div class="ritem"><b>Sociedade colonial</b><span>Chapetones (poder político) &gt; criollos (poder econômico, sem poder político) &gt; mestiços &gt; índios &gt; escravos. A frustração criolla move tudo.</span></div>
+        <div class="ritem"><b>Causas</b><span>Internas: tributos, exclusão, elite criolla insatisfeita. Externas: Iluminismo, EUA, Revolução Francesa, Haiti e a invasão napoleônica (1808).</span></div>
+        <div class="ritem"><b>O gatilho de 1808</b><span>Napoleão depõe Fernando VII e põe José Bonaparte no trono → Juntas Governativas criollas → independências.</span></div>
+        <div class="ritem"><b>Libertadores</b><span>Bolívar (norte, republicano, pan-americanista) e San Martín (sul, monarquista). Encontro de Guayaquil: San Martín cede a Bolívar.</span></div>
+        <div class="ritem"><b>Casos-chave</b><span>Haiti 1804 (escravos; 1ª independência e 1º fim da escravidão). Paraguai 1811 (autônomo, sem inglês). México 1821 (vira conservador). Cuba 1898 (cai sob os EUA).</span></div>
+        <div class="ritem"><b>Pós-independência</b><span>Congresso do Panamá (1826) fracassa; regimes oligárquicos (voto censitário); caudilhismo mantém o atraso colonial e fragmenta o território.</span></div>
+      </div>
+
+      <div style="margin-top:26px;padding:18px 20px;background:rgba(202,161,79,.13);border:1px solid var(--ochre);border-radius:9px">
+        <strong style="color:#fff;font-family:Georgia,serif">A grande tese que une os dois módulos:</strong>
+        <p style="color:#e9e6f2;margin-top:4px">O século XIX foi a era em que as <em>contradições do capitalismo</em> (Módulo 1) e as <em>contradições do colonialismo</em> (Módulo 2) explodiram em ideologias e revoluções. Em ambos os casos, a mudança foi <strong>conduzida ou contida pelas elites</strong>: a burguesia europeia diante do operariado, e a elite criolla diante das massas indígenas e escravizadas. Quem entende essa chave — <em>quem ganha e quem fica de fora de cada transformação</em> — lê o século XIX inteiro com clareza.</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<footer>
+  Aula elaborada a partir do material enviado (livro didático — Frente A — e slides de classe). Conteúdo de estudo para o 2º ano do Ensino Médio · Preparação para vestibulares e ENEM.<br>
+  Os links de vídeo direcionam ao YouTube e foram verificados como públicos na elaboração desta aula. Bons estudos!
+</footer>
+
+<script>
+// reveal on scroll
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
